@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5D4EB"
+    tools:context=".TodoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Welcome "
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To UPDATE the tasks, SWIPE LEFT"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="monospace"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To DELETE the tasks, SWIPE RIGHT"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To ADD the tasks, PRESS 'PLUS' logo "
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="monospace"/>
+
+</RelativeLayout>

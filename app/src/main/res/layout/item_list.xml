@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A9CDF4"
+    app:contentPadding="16dp"
+    android:id="@+id/list_card_container"
+    android:layout_marginHorizontal="16dp"
+    android:layout_margin="16dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="8dp"
+    app:barrierMargin="@android:dimen/app_icon_size">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/listTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:ellipsize="marquee"
+            android:fontFamily="monospace"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="9dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Your Title"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/dispTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:maxLines="10"
+            android:padding="8dp"
+            android:text="Your Task"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/listTitle"
+            app:layout_constraintTop_toBottomOf="@+id/listTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
